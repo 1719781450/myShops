@@ -1,0 +1,56 @@
+﻿@charset "utf-8";
+body,dl,dd,h1,h2,h3,h4,p{ margin: 0; }
+body,input,button,textarea,select,option,label{ font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC","Hiragino Sans GB",'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53,\9ED1\4F53',sans-self; font-size: 12px; color: #333; }
+img,a,a:active,a:focus{ border: none; outline: none; }
+ol,ul{ list-style:none; margin: 0; padding: 0; }
+em,i,b,strong{ font-size:100%; font-style: normal; font-weight: normal; }
+button::-moz-focus-inner,input::-moz-focus-inner{ padding:0; border:0; }
+input,button,textarea,select,label,form{ margin:0; padding:0; border: none; font-size: 100%; outline: none; }
+input,select{ vertical-align:middle; }
+table{ border-collapse:collapse; border-spacing:0; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; font-size:0; }
+.clearfix{ zoom:1; }
+a{ text-decoration: none; }
+* html{ background-image:url(about:blank); background-attachment:fixed; } /* 修正IE6振动bug */
+body{ background: #ffc600; }
+/* layout */
+.top-wrap{ height: 620px; background: url(../images/succGou/top-wrap-bg.png) repeat-x; }
+.header{ width: 980px; height: 55px; position: relative; margin: 0 auto; overflow: hidden; }
+.logo{ position: absolute; z-index: 1; }
+.logo{ display: block; top: 7px; left: 0; width: 79px; height: 41px; background: url(../images/succGou/logo.png) no-repeat left top; text-indent: -999px; overflow: hidden; cursor: pointer; }
+.logo:hover{ opacity:.8; filter:alpha(opacity=80); }
+.banner-main{ width: 100%; height: 565px; background: url(../images/succGou/ban.png) no-repeat center 90px; position: relative; overflow: hidden; }
+.nav{ width: 100%; height: 54px; line-height: 54px; text-align: right; }
+.nav a{ display: inline-block; height: 54px; line-height: 54px; padding: 0 15px; font-size: 16px; color: #fff; -webkit-transition:background .6s; -moz-transition:background .6s; -ms-transition:background .6s; transition:background .6s; }
+.nav a:hover{ background: #ff8a00; color: #fff; }
+.top-wrap h1{ display: none; }
+.content,
+.bus_light{ position: absolute; z-index: 22; }
+.bus_light{ width: 700px; height: 500px; z-index: 23; top: 0px; left: 50%; margin-left: -656px; }
+.content{ width: 454px; left: 50%; top: 175px; z-index: 33; }
+.title{ display: block; padding-bottom: 29px; opacity:.8; filter:alpha(opacity=80) }
+.download{ display: block; width: 264px; height: 58px; background: url(../images/succGou/back.png) no-repeat left top; }
+.bus,.bus-sub-title,.bus-title,.sign-btn,.yuna,.yunb{ position: absolute; z-index: 12; left: 50%; top: 50%; }
+.yuna{ width: 136px; height: 49px; top: 15px; margin-left: -380px; }
+.yunb{ width: 136px; height: 49px; top: 82px; margin-left: 360px; }
+.yuna{ animation-name: yunAnia; -webkit-animation: yunAnia 4s alternate infinite; -moz-animation: yunAnia 4s alternate infinite; animation: yunAnia 4s alternate infinite; }
+@-webkit-keyframes yunAnia{ from { -webkit-transform: translateX(60px) } to { -webkit-transform: translateX(0px) } }
+@-moz-keyframes yunAnia{ from { -moz-transform: translateX(-60px) } to { -moz-transform: translateX(0px) } }
+@keyframes yunAnia{ from { transform: translateX(-60px) } to { transform: translateX(0px) } }
+.yunb{ animation-name: yunAnib; -webkit-animation: yunAnib 3s alternate infinite; -moz-animation: yunAnib 3s alternate infinite; animation: yunAnib 3s alternate infinite; }
+@-webkit-keyframes yunAnib{ from { -webkit-transform: translateX(40px) } to { -webkit-transform: translateX(0px) } }
+@-moz-keyframes yunAnib{ from { -moz-transform: translateX(40px) } to { -moz-transform: translateX(0px) } }
+@keyframes yunAnib{ from { transform: translateX(40px) } to { transform: translateX(0px) } }
+.bus{ display: block; width: 200%; height: 309px; margin: 75px 0 0  -680px; animation-name: busAnia; -webkit-animation: busAnia 1s cubic-bezier(0,1.19,.99,.99) 0s normal none; -moz-animation: busAnia 1s cubic-bezier(0,1.19,.99,.99) 0s normal none; -ms-animation: busAnia 1s cubic-bezier(0,1.19,.99,.99) 0s normal none; }
+@-webkit-keyframes busAnia { from { left: -40%; } to { left: 50%; } }
+@-moz-keyframes busAnia { from { left: -40%; } to { left: 50%; } }
+@keyframes busAnia { from { left: -40%; } to { left: 50%; } }
+.bus-sub-title{font-size: 25px;color:#fff; margin: -100px 0 0 415px; animation-name: subTitle; -webkit-animation: subTitle 1s cubic-bezier(0,1.19,.99,.99) 0s normal none; -moz-animation: subTitle 1s cubic-bezier(0,1.19,.99,.99) 0s normal none; -ms-animation: subTitle 1s cubic-bezier(0,1.19,.99,.99) 0s normal none; }
+@-webkit-keyframes subTitle { from { left: 90%; } to { left: 50%; } }
+@-moz-keyframes subTitle { from { left: 90%; } to { left: 50%; } }
+@keyframes subTitle { from { left: 90%; } to { left: 50%; } }
+.bus-title{width: 100%; display: block;font-size: 28px; color: #fff; z-index: 1; top: 270px; left: 50%; margin-left: -346px; animation-name: bustitle; -webkit-animation: bustitle 0.6s linear 0s normal none; -moz-animation: bustitle 0.6s linear 0s normal none; animation: bustitle 0.6s linear 0s normal none; }
+@-webkit-keyframes bustitle { from { opacity: 0; -webkit-transform:scale(0,0); } to { opacity: 1; -webkit-transform:scale(1,1); } }
+@-moz-keyframes bustitle { from { opacity: 0; -moz-transform:scale(0,0); } to { opacity: 1; -moz-transform:scale(1,1); } }
+@keyframes bustitle { from { opacity: 0; transform:scale(0,0); } to { opacity: 1; transform:scale(1,1); } }
+.sign-btn{ display: block; top: 447px; left: 50%; width: 182px; height: 56px; line-height: 50px; margin-left: 138px; background: url(../images/btn-1.png) no-repeat left top; font-size: 24px; color: #fff; text-align: center; }

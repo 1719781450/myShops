@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* reset */
+img{vertical-align:middle;}
+a,img{border:0;}
+a,a:visited{color:#5e5e5e; text-decoration:none;}
+a:hover{color:#4183C4;text-decoration:underline;}

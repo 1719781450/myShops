@@ -1,0 +1,32 @@
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "宋体";}
+
+
+.limit-box{position:relative;width:970px;margin:20px auto;height:215px;overflow:hidden;border:1px solid #e6e6e6}
+/* limit-buy-hd */
+.limit-buy-hd{position:relative;height:37px;background:#f8f8f8 url(../images/flowPro/title.gif) no-repeat 80px 0;border-bottom:1px solid #e6e6e6;line-height:37px}
+.limit-buy-hd h2{float:left;overflow:hidden;display:inline;width:85px;font-size:14px;padding:0 0 0 10px;}
+/* limit-buy-nav */
+.limit-buy-nav{float:right;width:60px;margin:7px 10px 0 0}
+.limit-buy-nav span{float:left;width:44px;height:21px;font-size:14px;line-height:21px;text-align:center}
+.limit-buy-nav em{margin-right:1px;color:#ea5501;font-weight:700}
+.limit-buy-nav .prev,.limit-buy-nav .next{float:left;overflow:hidden;width:8px;height:9px;margin:6px 0 0;background:url(../images/flowPro/arrowbg.png) no-repeat -59px -180px}
+.limit-buy-nav .next{background-position:-52px -180px}
+/* limit-buy-bd */
+.limit-buy-bd{overflow:hidden;position:absolute;top:38px;left:0;width:9000px;z-index:1}
+/* btn-prev */
+.btn-prev,.btn-next{overflow:hidden;position:absolute;display:none;top:93px;width:27px;height:48px;background:url(../images/flowPro/arrowbg.png) no-repeat 0 0;z-index:10}
+.btn-prev{left:0}
+.btn-next{right:0;background-position:-40px 0}
+.btn-prev:hover{background-position:0 -60px}
+.btn-prev:active{background-position:0 -120px}
+.btn-next:hover{background-position:-40px -60px}
+.btn-next:active{background-position:-40px -120px}
+/* products */
+.products{float:left;width:971px}
+.products li{float:left;position:relative;width:164px;height:167px;padding:10px 15px 0;}
+.products li .pic{overflow:hidden;position:relative;width:120px;height:120px;margin:0 auto 4px}
+.products li .pic img{width:120px;height:120px}
+.products li .price{position:absolute;top:107px;right:15px;background:url(../images/flowPro/pricebg.gif) no-repeat;padding:6px 0 0 8px;width:74px;height:26px;line-height:26px;font-size:14px;font-weight:800;color:#fff;text-align:center}
+.products li .name{overflow:hidden;height:36px;margin:0 0 2px;line-height:18px;text-align:center}
